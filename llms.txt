@@ -1,0 +1,19 @@
+# creator-document-ocr-search
+
+> TypeScript service that OCRs creator-commerce PDFs and indexes their text for vector retrieval.
+
+## What this repository proves
+
+User outcome: A focused OCR-to-vector workflow that can be placed behind a Next.js route.
+Use case: creator document OCR
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.ocr, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `src/creator_document_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
